@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+p {
+    color: white;
+}
+
+hr {
+    width: 100vw;
+    border: none;
+    border-top: 1px solid #2a2a2a;
+}
+
+h2 {
+    font-size: clamp(20px, 7vw, 40px);
+    color: white;
+    margin: 30px;
+    font-family: 'Coffeetime';
+}
+
+h3 {
+    font-size: clamp(15px, 5vw,20px);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b26c35;
+}
+
+@font-face {
+    font-family: 'Coffeetime';
+    src: url('./ressources/fonts/Coffeetime.woff2') format('woff2'),
+        url('./ressources/fonts/Coffeetime.woff') format('woff');
+    font-weight: bold;
+}
+
+.pixelated {
+    image-rendering: pixelated;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+    max-width: 500px;
+    min-height: 0;
+}
+
+.logo {
+    image-rendering: pixelated;
+    filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.5));
+    width: 70vw;
+    max-width: 400px;
+}
+
+
+
+/* SOCIALS */
+
+.socials {
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    max-height: 35px;
+    min-height: 20px;
+    height: 7vw;
+}
+
+.socials:hover {
+    transform: scale(1.2);
+}
+
+.yt:hover {
+    filter: brightness(0) 
+    saturate(100%) 
+    invert(14%) 
+    sepia(100%) 
+    saturate(7470%) 
+    hue-rotate(1deg) 
+    brightness(103%) 
+    contrast(102%);
+}
+
+.x:hover {
+    filter: brightness(0) 
+    saturate(100%) 
+    invert(50%) 
+    sepia(0%) 
+    saturate(0%) 
+    hue-rotate(0deg) 
+    brightness(90%) 
+    contrast(100%);
+}
+
+
+
+.link {
+    margin: 5px;
+    font-size: clamp(10px, 2vw, 14px);
+    color: white;
+    font-weight: 600;
+    position: relative;
+    padding: 0 2px;
+}

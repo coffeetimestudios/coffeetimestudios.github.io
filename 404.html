@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" href="ressources/images/favicon.png">
+    <style>
+        @font-face {
+            font-family: 'Coffeetime';
+            src: url('./ressources/fonts/Coffeetime.woff2') format('woff2'),
+                url('./ressources/fonts/Coffeetime.woff') format('woff');
+            font-weight: bold;
+        }
+        body {
+            font-family: 'Coffeetime';
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 4em;
+            color: #B46A3D;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.5));
+        }
+        p {
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
+        .cup {
+            filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.5));
+            width: 50vw;
+            max-width: 170px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            image-rendering: pixelated;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 6px 15px;
+            background-color: white;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 1.7em;
+            transition: background-color 0.3s, transform 0.3s ease-in-out;;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #B46A3D;
+        }
+        .hidden-message {
+            opacity: 0.5;
+            font-size: 0.7em;
+            margin-top: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img {
+            user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cup" draggable="false" src="./ressources/images/cup.png" alt="">
+        <h1>PAGE NOT FOUND</h1>
+        <p>
+            THE PAGE YOUR ARE LOOKING FOR DOES NOT EXIST...
+        </p>
+        <a href="./index.html" class="btn">HOME PAGE</a>
+        <p class="hidden-message">
+            (P.S. If you were looking for secret game content... nice try. <br>
+            But no, really, it's not here.)
+        </p>
+    </div>
+</body>
+</html>
