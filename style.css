@@ -8,6 +8,7 @@ body {
     align-items: center;
     margin: 0;
     background-color: #1a1a1a;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -131,6 +132,8 @@ a:hover {
 
 .link {
     margin: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
     font-size: clamp(10px, 2vw, 14px);
     color: white;
     font-weight: 600;
