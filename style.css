@@ -64,8 +64,8 @@ a:hover {
 
 @font-face {
     font-family: 'Coffeetime';
-    src: url('./ressources/fonts/Coffeetime.woff2') format('woff2'),
-        url('./ressources/fonts/Coffeetime.woff') format('woff');
+    src: url('./res/fonts/Coffeetime.woff2') format('woff2'),
+        url('./res/fonts/Coffeetime.woff') format('woff');
     font-weight: bold;
 }
 
