@@ -98,7 +98,7 @@ a:hover {
 
 .socials {
     margin: 5px;
-    height: 35px;
+    height: 30px;
 }
 
 .socials:hover {
@@ -109,7 +109,6 @@ a:hover {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 10px;
-    font-size: 15px;
     color: white;
     position: relative;
     padding: 0 2px;
@@ -119,7 +118,7 @@ a:hover {
 /* FOOTER */
 
 .footer_content {
-    width: 80vw;
+    width: 90vw;
     max-width: 500px;
 }
 
@@ -137,23 +136,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 12px;
     gap: 5px 25px;
     justify-content: center;
 }
-
-/* @media (min-width: 769px) {
-  .legal {
-        justify-content: center;s
-  }
-}
-
-@media (max-width: 768px) {
-  .legal {
-    justify-content: left;
-    flex-direction: column;
-  }
-
-} */
 
 .vertical_bar {
     margin-left: -5px;
