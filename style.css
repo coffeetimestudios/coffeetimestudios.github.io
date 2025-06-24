@@ -25,20 +25,22 @@ p {
 }
 
 hr {
-    width: 100vw;
+    width: 70vw;
+    max-width: 400px;
+    margin-bottom: 25px;
     border: none;
-    border-top: 1px solid #2a2a2a;
+    border-top: 1px solid #333333;
 }
 
 h2 {
-    font-size: clamp(20px, 7vw, 40px);
+    font-size: 40px;
     color: white;
     margin: 30px;
     font-family: 'Coffeetime';
 }
 
 h3 {
-    font-size: clamp(15px, 5vw,20px);
+    font-size: 20px;
     color: white;
 }
 
@@ -96,47 +98,64 @@ a:hover {
 
 .socials {
     margin: 5px;
-    transition: transform 0.3s ease-in-out;
-    max-height: 35px;
-    min-height: 20px;
-    height: 7vw;
+    height: 35px;
 }
 
 .socials:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
-
-.yt:hover {
-    filter: brightness(0) 
-    saturate(100%) 
-    invert(14%) 
-    sepia(100%) 
-    saturate(7470%) 
-    hue-rotate(1deg) 
-    brightness(103%) 
-    contrast(102%);
-}
-
-.x:hover {
-    filter: brightness(0) 
-    saturate(100%) 
-    invert(50%) 
-    sepia(0%) 
-    saturate(0%) 
-    hue-rotate(0deg) 
-    brightness(90%) 
-    contrast(100%);
-}
-
-
 
 .link {
-    margin: 5px;
-    margin-right: 0px;
     margin-left: 0px;
-    font-size: clamp(10px, 2vw, 14px);
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
     color: white;
-    font-weight: 600;
     position: relative;
     padding: 0 2px;
+}
+
+
+/* FOOTER */
+
+.footer_content {
+    width: 80vw;
+    max-width: 500px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 550;
+    width: 100vw;
+    background-color: #181818;
+    padding: 40px;
+}
+
+.legal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 25px;
+    justify-content: center;
+}
+
+/* @media (min-width: 769px) {
+  .legal {
+        justify-content: center;s
+  }
+}
+
+@media (max-width: 768px) {
+  .legal {
+    justify-content: left;
+    flex-direction: column;
+  }
+
+} */
+
+.vertical_bar {
+    margin-left: -5px;
+    margin-right: -5px;
 }
