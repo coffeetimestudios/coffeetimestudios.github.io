@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: #b26c35;
+    color: #cc9665;
 }
 
 @font-face {
@@ -69,6 +69,11 @@ a:hover {
     src: url('./res/fonts/Coffeetime.woff2') format('woff2'),
         url('./res/fonts/Coffeetime.woff') format('woff');
     font-weight: bold;
+}
+
+::selection {
+    color: white;
+    background-color: #b26c35;
 }
 
 .pixelated {
@@ -80,7 +85,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 500px;
     min-height: 0;
 }
@@ -99,6 +104,7 @@ a:hover {
 .socials {
     margin: 5px;
     height: 30px;
+    transition: ease 0.15s;
 }
 
 .socials:hover {
@@ -111,7 +117,6 @@ a:hover {
     margin-bottom: 10px;
     color: white;
     position: relative;
-    padding: 0 2px;
 }
 
 
@@ -126,10 +131,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 550;
+    font-weight: 525;
     width: 100vw;
     background-color: #181818;
-    padding: 40px;
 }
 
 .legal {
@@ -142,6 +146,6 @@ footer {
 }
 
 .vertical_bar {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
